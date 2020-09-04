@@ -1,0 +1,157 @@
+/* Start general code */
+  /* background:linear-gradient(#f5b041,#f39c12) */
+/* End general code */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+.container
+{
+  height:100vh;
+  width:100%;
+  background-image:url(../images/Gate_cover_1920x1080.jpg);
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  padding-right:5%;
+
+}
+
+.navbar
+{
+  display:flex;
+  position:relative;
+}
+.navbar .logo
+{
+  width:250px;
+  height:100vh;
+  background:rgba(0,0,0,.5);
+  z-index:1;
+}
+.logo_tower
+{
+  position:absolute;
+  left:0;
+  top:40px;
+  z-index:1;
+}
+nav
+{
+  display:flex;
+}
+nav ul
+{
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+nav ul li
+{
+  list-style:none;
+  display:inline-block;
+  margin:0 25px;
+  font-size:1.5rem;
+  font-family: 'Oswald', sans-serif;
+  padding:0 5px 6px;
+  text-align:center;
+  border-radius:10px;
+  transform:.6s;
+}
+
+nav ul li:hover
+{
+  background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.5));
+}
+
+nav ul li a
+{
+  text-decoration:none;
+  color:#fff;
+}
+
+.content
+{
+  position:absolute;
+  right:200px;
+  left:50%;
+  top:20%;
+}
+.content h1
+{
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  font-size:4rem;
+  width:102%;
+}
+.content p
+{
+  color:#fff;
+  background:linear-gradient(to right, rgba(0,0,0,.8),rgba(0,0,0,.2));
+  padding:20px;
+  text-align:center;
+  font-size:1.2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing:1px;
+  margin-bottom:5px;
+}
+
+.content .btn
+{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(to right,rgba(0,0,0,.6),rgba(0,0,0,.2));
+  width:50%;
+  cursor:pointer;
+  margin:0 auto;
+  padding:10px;
+}
+.content .btn span
+{
+  color:#fff;
+}
+.content .btn img
+{
+  font-size:30px;
+  width:30px;
+  margin-right:15px;
+}
+
+.signature
+{
+  position:absolute;
+  right:0;
+  bottom:0;
+  padding:0px 20px;
+}
+
+#backVideo
+{
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+
+@media (min-aspect-ratio:16/9)
+{
+  #backVideo
+  {
+    width:100%;
+    height:auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9)
+{
+  #backVideo
+  {
+    width:auto;
+    height:100%;
+  }
+}
